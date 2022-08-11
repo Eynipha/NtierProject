@@ -1,0 +1,23 @@
+1=>Proje N_tier mimari paternine göre yazýlacaktýr.
+2=>Projede acýlacak katmanlar
+Entities,
+MAP,
+DAL,
+BLL,
+COMMON (Ortak kullanýlacak sýnýflarýn tutulacaðý katman olacaktýr),
+API UI (Projemizi dýsarý açmak istediðimiz için açacaðýmýz ayrý bir katmandýr),
+DTO(API'daki esnekliðimizin proje bazlý artmasý için acacaðýmýz katmandýr),
+UI(MVC olarak dusunulmuþtur)
+
+
+3=>Projede deðiþken isimleri deðiþkenler local veriable o0lduðu sürece camelCase,field olduðu sürece basýnda _semcolü olmak üzere camelCase; Property,metot, ve class isimleri PascalCase standartlarýnda yazýlacaktýr ve projede Türkçe karakter kullanýlmayacaktýr.Class isimleri kesinlikle cogul olmayacaktýr.
+
+4=> Katmanb isimleri Project ile baslayarak .sembolünden sonra katmansal takýlarla bitirilecektir(Projeck.ENTÝTÝES vs...)
+
+5=>Tasarým patternlerinden Generic Repositopry,SingletonPattern ve Strategy Pattern kesinlikle kullanýlýcaktýr...Mevcut algoritmada bu tasarým patternlerinin dýsýnda bir baska tasarým patterni öngörülmemektir...Ancak projenin esnekliði buna elveriþli olduðu taktirde ,projenin mimari paterniyle bir çakýþima olmadýðý takdirde (bu durum özel özel olarak istenecek olan bir Arge süreci içerisinde hemen belirtilmek zorundadýr) gerekli görülürse rahatca eklenebilecektir.
+
+
+***************
+Kendi proje fikrini uyguluyorsanýz da , listeden birt proje secseniz de bu tarz bir teknik dökümantasyon istenmektedir.Kendi proje fikrini uygulamak isteyen kisiler iþe bu dök-mantasyona ek olarak bir proje tanbýtým dökümantasyonumu yazmalýdýr.(Proje ne projesi hangi kitle üzerine hitap ediyor ,kullanýlma amacý ve sekli ne,yaþam döngüsünün nasýl olmasý bekleniyor,yaþam süresinin ne kadar olmasý bekleniyor)
+
+
